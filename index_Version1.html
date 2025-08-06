@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FrameHex Studio | Anime World</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 bg-gray-800 shadow-md">
+    <h1 class="text-2xl font-bold text-pink-400">FrameHex Studio</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-pink-300">Home</a>
+      <a href="#popular" class="hover:text-pink-300">Popular</a>
+      <a href="#about" class="hover:text-pink-300">About</a>
+      <a href="#contact" class="hover:text-pink-300">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://wallpapercave.com/wp/wp10293253.jpg');">
+    <div class="bg-black bg-opacity-60 p-6 rounded-xl">
+      <h2 class="text-4xl font-bold mb-2">Welcome to FrameHex Studio</h2>
+      <p class="text-lg">Explore the world of anime – Watch, Learn & Connect!</p>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <div class="p-6 text-center">
+    <input id="searchInput" type="text" placeholder="Search Anime..." class="w-full md:w-1/2 px-4 py-2 rounded-lg text-black"/>
+  </div>
+
+  <!-- Popular Anime -->
+  <section id="popular" class="p-6">
+    <h3 class="text-3xl font-semibold mb-4 text-pink-300">🔥 Popular Anime</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="animeList">
+      <!-- Anime Cards -->
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" class="w-full h-48 object-cover" alt="Attack on Titan">
+        <div class="p-2">
+          <h4 class="font-bold">Attack on Titan</h4>
+          <p class="text-sm text-gray-400">Action, Drama</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/1208/94745.jpg" class="w-full h-48 object-cover" alt="Demon Slayer">
+        <div class="p-2">
+          <h4 class="font-bold">Demon Slayer</h4>
+          <p class="text-sm text-gray-400">Action, Supernatural</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" class="w-full h-48 object-cover" alt="One Punch Man">
+        <div class="p-2">
+          <h4 class="font-bold">One Punch Man</h4>
+          <p class="text-sm text-gray-400">Action, Comedy</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/11/39717.jpg" class="w-full h-48 object-cover" alt="Death Note">
+        <div class="p-2">
+          <h4 class="font-bold">Death Note</h4>
+          <p class="text-sm text-gray-400">Mystery, Thriller</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/13/88977.jpg" class="w-full h-48 object-cover" alt="My Hero Academia">
+        <div class="p-2">
+          <h4 class="font-bold">My Hero Academia</h4>
+          <p class="text-sm text-gray-400">Superhero, Action</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/3/40451.jpg" class="w-full h-48 object-cover" alt="Naruto">
+        <div class="p-2">
+          <h4 class="font-bold">Naruto</h4>
+          <p class="text-sm text-gray-400">Adventure, Ninja</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/12/88963.jpg" class="w-full h-48 object-cover" alt="Jujutsu Kaisen">
+        <div class="p-2">
+          <h4 class="font-bold">Jujutsu Kaisen</h4>
+          <p class="text-sm text-gray-400">Fantasy, Action</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://cdn.myanimelist.net/images/anime/2/71927.jpg" class="w-full h-48 object-cover" alt="Tokyo Ghoul">
+        <div class="p-2">
+          <h4 class="font-bold">Tokyo Ghoul</h4>
+          <p class="text-sm text-gray-400">Horror, Supernatural</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-6 bg-gray-800 mt-6 rounded-xl">
+    <h3 class="text-3xl font-semibold mb-2 text-pink-300">📖 About FrameHex Studio</h3>
+    <p class="text-gray-300">FrameHex Studio is a creative anime hub dedicated to anime fans worldwide. We aim to deliver high-quality content, character guides, episode breakdowns, and more. Whether you're a fan of classic titles or the latest hits, this is your space to connect with the anime universe!</p>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="bg-gray-900 mt-6 p-6 text-center border-t border-gray-700">
+    <p class="text-gray-400">Connect with us:</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="hover:text-pink-300">Instagram</a>
+      <a href="#" class="hover:text-pink-300">YouTube</a>
+      <a href="#" class="hover:text-pink-300">Discord</a>
+    </div>
+    <p class="text-sm text-gray-500 mt-4">© 2025 FrameHex Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- Search Function -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const animeList = document.getElementById('animeList');
+    const cards = animeList.querySelectorAll('div.bg-gray-800');
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const title = card.querySelector('h4').textContent.toLowerCase();
+        card.style.display = title.includes(term) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
